@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 
-
 {% block styles %}
 <style>
     body {
@@ -29,7 +28,7 @@
     }
 
     .received {
-        background-color: #FFFFFF;
+        background-color: #00FF00;
         align-self: flex-start;
 
     }
@@ -41,7 +40,7 @@
         left: 0;
         right: 0;
         padding: 10px;
-        background-color: black;
+        background-color: #808080;
     }
 
     .message-input {
@@ -56,17 +55,15 @@
     }
 </style>
 
-{% endblock styles %}
+{% endblock %}
 
 {% block content %}
 
 <div class="chat-container">
     <div class="card flex-grow-1">
-        <div class="card-header bg-primary text-white">Chat</div>
+        <div class="card-header bg-secondary text-white">Chat</div>
         <div class="card-body messages-box">
-      
             <ul class="list-unstyled messages-list">
-              
               <li class="message received">
                 <div class="message-text">
                   <div class="message-sender">
@@ -77,8 +74,7 @@
                   </div>
                 </div>
               </li>
-            </ul>
-            
+            </ul>     
           </div>
           <br><br>
           <br><br>
@@ -96,4 +92,4 @@
   </form>
 </div>
 
-{% endblock content %}
+{% endblock %}
