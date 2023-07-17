@@ -24,11 +24,11 @@
     }
 
     .sent {
-        background-color: #2600ff;
+        background-color: #1982FC;
     }
 
     .received {
-        background-color: #00FF00;
+        background-color: #43CC47;
         align-self: flex-start;
 
     }
@@ -93,14 +93,14 @@
 </div>
 <script>
 
-  const msgList = document.querySelector('.messages-list');
-  const msgForm = document.querySelector('.messages-list');
-  const msgInput = document.querySelector('.messages-list');
+  const messagesList = document.querySelector('.messages-list');
+  const messageForm = document.querySelector('.message-form');
+  const messageInput = document.querySelector('.message-input');
 
-  msgForm.addEventListener('Send', (event) => {
+  messageForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const message = msgInput.value.trim();
+    const message = messageInput.value.trim();
     if (message.length === 0){
       return;
     }
@@ -108,15 +108,18 @@
 
   const messageItem = document.createElement('li')
   messageItem.classList.add('message', 'sent')
+  
   messageItem.innerHTML = `
-  <div class ="message-text">
-    <div class="message-sender">
-      <b>You</b>
-    </div>
-
-  </div>`;
-  msgList.appendChild(messageItem)
-  msgInput.value = ''
+        <div class="message-text">
+            <div class="message-sender">
+                <b>You</b>
+            </div>
+            <div class="message-content">
+                ${message}
+            </div>
+        </div>`;
+  messagesList.appendChild(messageItem)
+  messageInput.value = ''
 
 
   fetch('', {
@@ -142,7 +145,7 @@
             </div>
         </div>
           `;
-        msgList.appendChild(messageItem);
+        messagesList.appendChild(messageItem);
       });
   });
   
