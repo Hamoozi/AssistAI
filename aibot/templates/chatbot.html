@@ -105,9 +105,20 @@
       return;
     }
 
-    
 
-  
+  const messageItem = document.createElement('li')
+  messageItem.classList.add('message', 'sent')
+  messageItem.innerHTML = `
+  <div class ="message-text">
+    <div class="message-sender">
+      <b>You</b>
+    </div>
+
+  </div>`;
+  msgList.appendChild(messageItem)
+  msgInput.value = ''
+
+
 
   
 </script>
