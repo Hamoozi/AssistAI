@@ -97,6 +97,19 @@
   const msgForm = document.querySelector('.messages-list');
   const msgInput = document.querySelector('.messages-list');
 
+  msgForm.addEventListener('Send', (event) => {
+    event.preventDefault();
+
+    const message = msgInput.value.trim();
+    if (message.length === 0){
+      return;
+    }
+
+    
+
+  
+
+  
 </script>
 
 
