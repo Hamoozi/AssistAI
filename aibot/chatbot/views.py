@@ -18,7 +18,6 @@ def ask_openai(message):
 
 
     )
-    print(response)
     answer = response.choice[0].text.strip()
     return answer
 
@@ -27,6 +26,6 @@ def chatbot(request):
     if request.method == 'POST':
         message = request.POST.get('message')
         #This will be replaced by api responce in the future
-        response = 'I\'m doing great! How about you?'
+        response = ask_openai(message)
         return JsonResponse({'message': message, 'response': response})
     return render(request, 'chatbot.html')
