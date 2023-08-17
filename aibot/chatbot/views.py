@@ -5,12 +5,12 @@ import openai
 #API Key hidden for privacy, get key from https://platform.openai.com/docs/api-reference
 
 
-openai_api_key =  ''
+openai_api_key =  'YOURAPIKEY'
 openai.api_key = openai_api_key
 
 def ask_openai(message):
     response = openai.Completion.create(
-        model = "text-davinci-003",
+        model = "gpt-3.5-turbo",
         prompt = message,
         max_tokens=150,
         stop = None,
