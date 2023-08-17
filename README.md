@@ -1,4 +1,4 @@
-# HelpBot
+![image](https://github.com/Hamoozi/AssistAI/assets/82399910/c6bb30b8-62d8-42d1-93fa-c5eae539f50f)# HelpBot
 
 HelpBot is a chatbot project that allows you to converse with a chatbot by typing in messages. It is being deployed using Django and is being scripted with JavaScript and HTML/CSS. This project is currently a work in progress but will be designed to be similar to ChatGPT-3.
 
@@ -18,6 +18,7 @@ To run this code, you must have the following installed on your computer:
 4. Run the command `python manage.py runserver` to start the server.
 5. Open the link provided in the terminal to access the chatbot.
 
-![image](https://github.com/Hamoozi/ChatBot/assets/82399910/83b2f52f-3947-40ec-99e4-6bc9e5bdf6c4)
+
+![image](https://github.com/Hamoozi/AssistAI/assets/82399910/341cac55-ab5b-45f8-82c5-0b3e78c4cc4f)
 
 
