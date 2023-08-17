@@ -19,6 +19,7 @@ To run this code, you must have the following installed on your computer:
 5. Open the link provided in the terminal to access the chatbot.
 
 
-![image](https://github.com/Hamoozi/AssistAI/assets/82399910/341cac55-ab5b-45f8-82c5-0b3e78c4cc4f)
+
+![image](https://github.com/Hamoozi/AssistAI/assets/82399910/2382bc6b-1d3b-4354-a34c-729760f1e4f8)
 
 
