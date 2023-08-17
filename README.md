@@ -8,6 +8,7 @@ To run this code, you must have the following installed on your computer:
 
 - Python
 - Django
+- OpenAI Library
 - A code editor (such as Visual Studio Code)
 
 ## Running the code
