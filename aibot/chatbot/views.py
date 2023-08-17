@@ -15,10 +15,8 @@ def ask_openai(message):
         max_tokens=150,
         stop = None,
         temperature=0.7,
-
-
     )
-    answer = response.choice[0].text.strip()
+    answer = response.choices[0].text.strip()
     return answer
 
 
